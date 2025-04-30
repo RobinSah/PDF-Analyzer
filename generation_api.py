@@ -37,7 +37,7 @@ class GenerationResponse(BaseModel):
 # Load environment variables
 load_dotenv()
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
-HUGGINGFACE_API_KEY = os.environ.get("HUGGINGFACE_API_KEY", "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")
+HUGGINGFACE_API_KEY = os.environ.get("HUGGINGFACE_API_KEY")
 
 # API endpoints for different models
 MODEL_ENDPOINTS = {
