@@ -38,9 +38,9 @@ class GenerationResponse(BaseModel):
 
 # Load environment variables
 load_dotenv()
-OPENAI_API_KEY = os.environ.get(<your openai api key>)
-HUGGINGFACE_API_KEY = os.environ.get(<your huggingface api key>)
-GROQ_API_KEY = os.environ.get(<your groq api key>)
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+HUGGINGFACE_API_KEY = os.environ.get("HUGGINGFACE_API_KEY")
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 
 # API endpoints for different models
 MODEL_ENDPOINTS = {
