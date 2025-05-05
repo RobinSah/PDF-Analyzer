@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add these styles to your global CSS file */
+
+/* Enhanced styles for the bulk generation table display */
+.bulk-table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .bulk-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+  
+  .bulk-table-container th {
+    background-color: #f3f4f6;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .bulk-table-container td {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e7eb;
+    vertical-align: top;
+  }
+  
+  /* Make table header sticky for better usability with large datasets */
+  .bulk-table-container thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  /* Ensure the container for the generated content has proper spacing */
+  .bulk-table-container h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  /* Responsive adjustments for mobile */
+  @media (max-width: 768px) {
+    .bulk-table-container {
+      font-size: 0.875rem;
+    }
+    
+    .bulk-table-container th,
+    .bulk-table-container td {
+      padding: 0.5rem;
+    }
+  }
