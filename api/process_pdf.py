@@ -22,7 +22,7 @@ load_dotenv()
 router = APIRouter()
 
 # Initialize Mistral client
-MISTRAL_API_KEY = os.environ.get("YlSjwZ5j09EsZxOfR0uxmwFhx7NcJ7gg")
+MISTRAL_API_KEY = os.environ.get("MISTRAL_API_KEY")
 mistral_client = Mistral(api_key=MISTRAL_API_KEY)
 
 # Global variables to store the current processing state
